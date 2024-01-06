@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ddf64e68a94d51a3c1f4e340c4e45f, type: 3}
+  m_Name: Sakura Shield Short Time
+  m_EditorClassIdentifier: 
+  FxName: Sakura Shield Short Time
+  Fx: {fileID: 1202704834907032, guid: cd9dad4756f16a7459449394ad7bcf3e, type: 2}
+  LaunchStateName: Sword And Shield Short Block
+  IsActivationRequired: 0

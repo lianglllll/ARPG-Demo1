@@ -1,0 +1,28 @@
+---------------------------------------------------------------------------------------------------------
+v.1.2 Released (old version was deprecated)
+
+Added: Dark Paralysis, Lightning Blast, Paper Power, Blink, Soul Crystal effects
+
+v.1.2.5 Added new effects
+
+Added: Angry pumpkin, Accurate gunshot, Fast gunshot, Shadow hole, Double attack shuriken, Void grenade
+
+v.1.3 Added new effects
+
+Added: Rune of Power, Lightning Splash, Water Splash, Sakura Shield, Sakura Strike
+
+Improvements: simplified blink controller
+
+v.1.4 Added new effects
+
+Added: 
+ - Minigun, Hammer Smash, Hits
+
+Improvements: 
+ - added HDRP,LWRP Support (except of the some distortion effects)
+ - rework and optimize some effects
+ 
+ v.1.4.3 
+Improvements: 
+ - All global keywords in the shader are replaced with shader_feature_local (since 2019.2.19) 
+---------------------------------------------------------------------------------------------------------

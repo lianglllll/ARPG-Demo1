@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bf9d28f4b2ccf41b224638e4eab478, type: 3}
+  m_Name: Rune of Power
+  m_EditorClassIdentifier: 
+  FxName: Rune of Power
+  Fx: {fileID: 1627014467649036, guid: 4707c4ebc30f54e41ae6eb01337b8a1e, type: 2}
+  Offset: {x: 0, y: 0, z: 0}
+  LaunchAudioClip: {fileID: 0}

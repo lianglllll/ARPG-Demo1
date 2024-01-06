@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bf9d28f4b2ccf41b224638e4eab478, type: 3}
+  m_Name: Dark Paralysis
+  m_EditorClassIdentifier: 
+  FxName: Dark Paralysis
+  Fx: {fileID: 1802439656372660, guid: 8e11b07ea0bd8514b8d0e9a2e651625b, type: 2}
+  Offset: {x: 0, y: 0, z: 0}
+  LaunchAudioClip: {fileID: 8300000, guid: ad39082e148c6bf4b914590283905283, type: 3}

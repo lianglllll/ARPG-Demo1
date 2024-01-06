@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: P_PaperTube
+  m_Shader: {fileID: 4800000, guid: a1d0de4414f554d4f85da289915bac37, type: 3}
+  m_ShaderKeywords: USE_SOFT_PARTICLES _MASKAPPEARAXIS_NONE _METALLICGLOSSMAP _NORMALMAP
+    _USESOFTPARTICLES_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseColorRGBOutlineWidthA:
+        m_Texture: {fileID: 2800000, guid: a2163bf27f5151241adebe6339ca9467, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 3297645629b38b3429cac4ea4ad1d1d2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: a2163bf27f5151241adebe6339ca9467, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Highlight:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a2163bf27f5151241adebe6339ca9467, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskAppearNoise:
+        m_Texture: {fileID: 2800000, guid: 86ad23c623f950a4997067186e283be5, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: dfade78f0ad8e014491f2824c779ba4c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: 140c5b15ccac91a4fb58b5ea4666c02f, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 140c5b15ccac91a4fb58b5ea4666c02f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 3297645629b38b3429cac4ea4ad1d1d2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonRamp:
+        m_Texture: {fileID: 2800000, guid: e015874e5b1a29b41870edff8a55d270, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ASEOutlineWidth: 0.02
+    - _AlphaCutout: 0
+    - _BaseCellOffset: 0
+    - _BaseCellSharpness: 0.01
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DissolveAmount: 0
+    - _DissolveEdgeWidth: 0.55
+    - _DstBlend: 0
+    - _EmissionAdjust: 0
+    - _EmissionPower: 1
+    - _FresnelPower: 0
+    - _FresnelScale: 0
+    - _GlossMapScale: 0
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HighlightCellOffset: -0.95
+    - _HighlightCellSharpness: 0.01
+    - _IndirectDiffuseContribution: 1
+    - _IndirectSpecularContribution: 1
+    - _InvFade: 1
+    - _MaskAppearAxis: 0
+    - _MaskAppearInvert: 0
+    - _MaskAppearProgress: 0
+    - _MaskAppearStrength: 1
+    - _MaskClipValue: 0.5
+    - _Metallic: 0
+    - _Mode: 0
+    - _NormalScale: 1
+    - _OcclusionStrength: 1
+    - _OutlineWidth: 0.02
+    - _Parallax: 0.02
+    - _RimOffset: 0.56
+    - _RimPower: 0.56
+    - _ShadowContribution: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _StaticHighLights: 0
+    - _TessMax: 25
+    - _TessMin: 10
+    - _TessPhongStrength: 0.5
+    - _TessValue: 1
+    - _TexPower: 1
+    - _UVSec: 0
+    - _UseSoftParticles: 1
+    - _VertexOffset: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseTint: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveColor: {r: 4.237095, g: 2.7286003, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HighlightTint: {r: 1, g: 1, b: 1, a: 1}
+    - _MainTilingOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _OutlineTint: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 0}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 0}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}

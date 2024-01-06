@@ -1,0 +1,11 @@
+1) If the abiliti ui (when you click right mouse button) of skills doesn't work after import
+
+   Assigning an individual layer to a floor object ("plane"), such as "Floor"
+   And in the IFX_Ability UI Manager set the "AbilityUiLayerMask" to "Floor"
+
+2) Unity 2018.1 HDRP, in case you see black screen indead of skill. 
+   There is a problem with Particle System uses Point Light. 
+   You need to disable Lightning in the particle system.
+
+Contacts:
+pelengami@gmail.com

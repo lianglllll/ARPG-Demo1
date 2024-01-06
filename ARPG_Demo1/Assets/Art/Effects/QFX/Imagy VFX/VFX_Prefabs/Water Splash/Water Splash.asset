@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ddf64e68a94d51a3c1f4e340c4e45f, type: 3}
+  m_Name: Water Splash
+  m_EditorClassIdentifier: 
+  FxName: Water Splash
+  Fx: {fileID: 1682608601247886, guid: 45fcc43dafecb014c992ad2a2003e46a, type: 2}
+  LaunchStateName: Standing 2H Magic Area Attack 01
+  IsActivationRequired: 1
+  LaunchAudioClip: {fileID: 0}
+  ActivateAudioClip: {fileID: 0}

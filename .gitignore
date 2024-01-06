@@ -1,0 +1,14 @@
+.vs/
+Library/
+Temp/
+.vscode/
+Logs/
+UserSettings/
+Packages/
+obj/
+*.userprefs
+*.unityproj
+*.DS_Store
+*.vsconfig
+CourseResources/
+ARPG_Demo1/Assets/Animator/MMD4Mecanim
