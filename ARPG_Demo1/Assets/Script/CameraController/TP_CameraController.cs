@@ -7,18 +7,17 @@ public class TP_CameraController : MonoBehaviour
 {
     [Header("相机参数配置")]
     private Transform _lookTarget;
-    [SerializeField] private float _positionOffset;                 
-    [SerializeField] private float _controllerSpeed;                       //相机的移动速度
-    [SerializeField] private float _positionSmoothTime;                    //相机移动平滑时间
-    [SerializeField] private Vector2 _cameraVerticalMaxAngle;              //限制相机上下看的最大角度
-    [SerializeField] private float _rotateSmoothTime;                      //相机旋转平滑时间
-    private Vector3 _currentRotateVelocity = Vector3.zero;                 //当前相机的移动速度,这里设置为0
+    [SerializeField] private float _positionOffset = 0.1f;                                  //相对于_currentLookTarget的偏移值
+    [SerializeField] private float _controllerSpeed = 0.3f;                                 //相机的移动速度
+    [SerializeField] private float _positionSmoothTime = 10;                                //相机移动平滑时间
+    [SerializeField] private float _rotateSmoothTime = 0.1f;                                //相机旋转平滑时间
+    [SerializeField] private Vector2 _cameraVerticalMaxAngle = new Vector2(-65,65);   //限制相机上下看的最大角度
 
-    private Vector2 _input;                                                //用于接收鼠标输入
-    private Vector3 _cameraRotation;                                       //用于保存摄像机的旋转值
-
-    private Transform _currentLookTarget;
-    private bool _isFinish;
+    private Vector3 _currentRotateVelocity = Vector3.zero;                                  //当前相机的移动速度,这里设置为0
+    private Vector2 _input;                                                                 //用于接收鼠标输入
+    private Vector3 _cameraRotation;                                                        //用于保存摄像机的旋转值
+    private Transform _currentLookTarget;                                                   //摄像机当前注释的目标
+    private bool _isFinish;                                                                 //是否处于摄像机处决模式
 
 
     private void Awake()
@@ -91,7 +90,6 @@ public class TP_CameraController : MonoBehaviour
         var newPosition = (((_isFinish)? _currentLookTarget.transform.position + _currentLookTarget.up*0.9f : _currentLookTarget.position) + (-_currentLookTarget.transform.forward * _positionOffset));
         transform.position = Vector3.Lerp(transform.position, newPosition, DevelopmentToos.UnTetheredLerp(_positionSmoothTime));
     }
-
 
     /// <summary>
     /// player处决敌人时的回调

@@ -18,7 +18,7 @@ public abstract class NCharacterCombatBase : MonoBehaviour
     protected bool _applyAttackInput;
 
     [Header("敌人范围检测")]
-    [SerializeField] protected float _detectionRange;
+    [SerializeField] protected float _detectionRange = 8.5f;
     [SerializeField] private LayerMask _enemyLayer;
 
     [SerializeField,Header("敌人信息")]
@@ -85,6 +85,7 @@ public abstract class NCharacterCombatBase : MonoBehaviour
         if (_currentEnemy == null) return;
         if (DevelopmentToos.DistanceForTarget(_currentEnemy, transform) > 5f) return;
         //攻击的时候，看向敌人
+        //这里如果是倒地状态的hit还是会进去，不知道为什么？
         if (_animator.AnimationAtTag("Attack") && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.5f)
         {
             transform.Look(_currentEnemy.position, 1000f);
@@ -161,6 +162,8 @@ public abstract class NCharacterCombatBase : MonoBehaviour
         GameEventManager.Instance.CallEvent<Transform>("OnDetectEnemy", _currentEnemy);         //触发检测到敌人的事件
         return 0;
     }
+
+
 
     /// <summary>
     /// 触发伤害，告诉敌人它被揍了

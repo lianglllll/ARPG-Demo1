@@ -78,7 +78,6 @@ namespace MyARPG.Movement
             _applyMovement = apply;
         }
 
-
         /// <summary>
         /// test
         /// </summary>

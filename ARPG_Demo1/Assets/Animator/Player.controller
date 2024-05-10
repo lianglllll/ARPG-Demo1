@@ -174,7 +174,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7719059757796840176, guid: 9b9a77b2e4e44174e9520136195cdf5b, type: 3}
-  m_Tag: Hit
+  m_Tag: Death
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -192,7 +192,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: DeltaAngle
-    m_EventTreshold: 135
+    m_EventTreshold: 100
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8268708352774095349}
   m_Solo: 0
@@ -1306,7 +1306,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: DeltaAngle
-    m_EventTreshold: -135
+    m_EventTreshold: -100
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1093324027989059059}
   m_Solo: 0
@@ -1811,8 +1811,8 @@ AnimatorStateTransition:
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.79729736
+  m_TransitionOffset: 0.93696034
+  m_ExitTime: 0.7972974
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -3112,8 +3112,8 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
+  m_TransitionDuration: 0.24999988
+  m_TransitionOffset: 0.8352768
   m_ExitTime: 0.84375
   m_HasExitTime: 0
   m_HasFixedDuration: 1

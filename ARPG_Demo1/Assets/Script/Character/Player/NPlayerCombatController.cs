@@ -32,7 +32,7 @@ public class NPlayerCombatController : NCharacterCombatBase
         _playerWpeaon = GetComponent<PlayerWpeaons>();
     }
 
-    protected override void Update()
+    protected override void Update()    
     {
         base.Update();
         ClearEnemy();

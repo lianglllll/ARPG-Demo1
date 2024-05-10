@@ -20,6 +20,7 @@ public class InputManager : Singleton<InputManager>
     public bool Parry => _inputActions.GameInput.Parry.phase == InputActionPhase.Performed;     //°´×¡
     public bool Equip => _inputActions.GameInput.EquipWP.triggered;
 
+    public bool IsRun => _inputActions.GameInput.Run.phase == InputActionPhase.Performed;
 
     protected override void Awake()
     {

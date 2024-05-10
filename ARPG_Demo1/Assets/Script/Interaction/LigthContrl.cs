@@ -5,7 +5,7 @@ using UnityEngine;
 public class LigthContrl : MonoBehaviour
 {
 
-    public InteractionBehaviour _light;         //这个可以写成列表，一个控制器控制多个交互物品        
+    public InteractionBehaviour _light;     //这个可以写成列表，一个控制器控制多个交互物品        
     private bool canCantrol;                //是否可以交互
 
     private void Start()

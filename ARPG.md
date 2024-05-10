@@ -12,9 +12,35 @@
 
 
 
+##  **向量在平面上的投影**
+
+![image-20240204231146412](ARPG.assets/image-20240204231146412.png) 
+
+![image-20240204231201197](ARPG.assets/image-20240204231201197.png)
+
+
+
+## 线性插值
+
+![image-20240205221438382](ARPG.assets/image-20240205221438382.png)
+
+![image-20240205221527681](ARPG.assets/image-20240205221527681.png)
+
+<img src="ARPG.assets/image-20240205221647096.png" alt="image-20240205221647096" style="zoom:50%;" /> 
+
+
+
+
+
+
+
+
+
+
+
 # bug
 
-1.发现个有趣的东东：
+**1.父物体和子物体坐标坐标问题**
 
 当一个父物体挂载一个子物体，此时在hierarchy面板点击父物体，它的坐标系图标回在父子物体中间，而不是父物体上。
 
@@ -22,7 +48,9 @@
 
 
 
-2.模型导入白色或者粉红色
+
+
+**2.模型导入白色或者粉红色**
 
 ![image-20231213084818861](ARPG.assets/image-20231213084818861.png) 
 
@@ -32,21 +60,37 @@
 
 
 
-3.动画无法退出
+**3.动画无法退出**
 
-has exit time 没有勾选，也不知道为啥，这要我取研究一下动画
+has exit time 没有勾选，也不知道为啥，这要我取研究一下动画；
+
+问题解决：如果你没有再状态机中设置其他其他的退出条件并且没有勾选has exit time，那么动画播放完就算了。 
 
 
 
 # 项目设置
 
-导入input system
+1.导入input system，因为我们要用到这个新的输入系统
 
-
-
-勾选Ente Play Mode Settings
+2.勾选Ente Play Mode Settings，开始播放的时候更快。
 
 ![image-20231206223111132](ARPG.assets/image-20231206223111132.png) 
+
+在Unity中，"Enter Play Mode Settings"（进入播放模式设置）是指在进入播放模式（Play Mode）时应用的一些设置。这些设置允许你配置编辑器在你启动游戏时的行为，以及在离开播放模式时的一些操作。以下是一些常见的 "Enter Play Mode Settings"：
+
+1. **Scene Reload Mode (场景重载模式)：**
+   - **Reload All (全部重载)：** 在进入播放模式时重新加载所有场景。
+   - **Single (单个)：** 只重新加载当前活动的场景。
+2. **Script Changes While Playing (脚本在播放时更改)：**
+   - **Recompile And Continue Playing (重新编译并继续播放)：** 在脚本更改时重新编译并保持游戏继续运行。
+   - **Recompile After Finished Playing (在播放结束后重新编译)：** 在退出播放模式后再重新编译脚本。
+3. **Capture Play Mode (捕获播放模式)：**
+   - **Enable (启用)：** 在进入播放模式时启用Scene视图和Game视图的截图功能。
+   - **Disable (禁用)：** 在播放模式时禁用截图功能。
+
+这些设置可以在Unity编辑器的菜单栏中找到。选择 "Edit"（编辑） -> "Project Settings"（项目设置） -> "Editor"（编辑器），然后你会看到 "Enter Play Mode Settings" 部分。
+
+选择适当的设置可以帮助你在开发过程中更有效地调试和测试游戏。例如，选择适当的场景重载模式可以影响你在播放模式中所做的更改如何被应用。
 
 
 
@@ -54,154 +98,265 @@ has exit time 没有勾选，也不知道为啥，这要我取研究一下动画
 
 # 角色控制器
 
+在Unity中，一个角色控制器（Character Controller）通常需要实现以下功能以实现基本的玩家角色移动和交互：
+
+**移动：** 角色控制器需要处理玩家输入（例如键盘、鼠标、手柄）并将其转换为角色在游戏场景中的移动。这包括前进、后退、左右移动、跳跃等。
+
+**碰撞检测：** 角色控制器需要检测与环境中其他物体的碰撞，以避免穿透物体或出现不自然的行为。通常，这涉及到使用碰撞体（Colliders）与触发器（Triggers）来进行碰撞检测。
+
+**重力：** 角色通常受到重力的影响，角色控制器需要处理重力，确保角色在没有输入时能够垂直地下落，并在跳跃时克服重力。
+
+**跳跃：** 角色控制器需要处理跳跃输入，计算跳跃的高度，并在适当的时候使角色跃起。
+
+**互动：** 如果游戏中有互动元素，例如与物体互动、开关、对话等，角色控制器需要处理这些互动，通常通过检测玩家输入或与互动对象的碰撞触发器。
+
+**相机控制：** 如果游戏使用第一人称或第三人称视角，角色控制器可能需要控制相机的位置和旋转，以确保玩家能够适当地看到角色周围的环境。
+
+**动画：** 角色控制器通常需要与动画系统集成，以播放角色的动画。这可能涉及到根据角色的移动状态切换不同的动画状态。
+
+**状态管理：** 角色可能有不同的状态，例如行走、奔跑、跳跃、下蹲等。角色控制器需要管理这些状态，并根据当前状态来执行相应的行为。
+
+**输入管理：** 角色控制器需要处理玩家输入，包括键盘、鼠标、手柄等。这可能需要使用Unity的Input系统或其他输入管理工具。
+
+**音效：** 角色的移动、跳跃等行为可能伴随着音效。角色控制器可能需要触发相应的音效以增强游戏体验。
+
+这些功能可以根据游戏的具体需求而有所变化，但通常是实现一个基本的角色控制器所需的核心功能。 Unity的Character Controller组件是一个内置的控制器，用于处理角色的基本运动和碰撞检测。
 
 
-角色移动基类
 
-到时候需要移动的游戏对象挂载一个实现移动基类的类就行了。
+## 角色移动
+
+我们有哪些个角色呢？
+
+自己控制的ctlCharacter、敌人aiCharacter、网络同步的syncCharacter
+
+虽然它们都用于不同的characet用于不同的场景，但是呢它们显然是有一些共同的功能的，所以我们需要创建一个角色移动的基类
+
+**CharacterMovementControllerBase**
+
+
+
+这里移动我们使用charactercontroller来帮我们实现，并且需要播放动画，所以我们获取下面这两个组件。
 
 ```
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+protected CharacterController _controller;
+protected Animator _animator;
+```
 
 
 
-namespace MyARPG
+### todo
+
+不仅重力要设置一个开启的标记，movement也需要设置一个开启的标记，因为角色死亡后，脚本再执行就有问题了。
+
+并且也浪费资源，是否选择销毁整个角色比较好呢？我们的脚本添加有一点多啊。
+
+![image-20240205211500966](ARPG.assets/image-20240205211500966.png) 
+
+角色死亡后因为脚本没有关闭，unity还是会一直调用这些个脚本，就会报这个警告
+
+![image-20240205211529612](ARPG.assets/image-20240205211529612.png) 
+
+
+
+
+
+### **地面检测相关**
+
+地面检测注意是给重力来服务的，因为人物不在地面的时候，我们需要给角色添加一个重力加速度来模拟一个重力的效果
+
+```c#
+protected bool _characterIsOnGroud;               //角色是否在地面上                      
+protected float _groudDetectionPositionOffset;    //用于调整检测点的offset，这是相对于角色模型的position的
+protected float _detectionRang;                   //检测范围，因为我们使用一个sphere碰撞器来检测是否接触地面
+protected LayerMask _whatIsGround;                //检测场景，只去检测被标记为groud的layer，其他的就忽略掉
+```
+
+![image-20240204215209103](ARPG.assets/image-20240204215209103.png) 
+
+```c#
+//地面检测
+private bool GroundDetection(){
+	var detectionPosition = new Vector3(transform.position.x, transform.position.y - _groudDetectionPositionOffset, transform.position.z);
+	return Physics.CheckSphere(detectionPosition, _detectionRang, _whatIsGround, QueryTriggerInteraction.Ignore);
+}
+```
+
+
+
+### **重力相关**
+
+这里把重力放到角色移动这里也比较合理吧
+
+```c#
+//重力加速度
+protected readonly float CharacterGravity = -9.8f;      
+
+//用于更新角色Y轴的速度(可以应用于重力和跳跃高度,砍敌人一刀，敌人往天上飞也可以用这个变量实现)
+protected float _characterVerticalVelocity;
+
+//角色最大的垂直方向速度，角色在低于这个值的时候，才需要应用重力
+protected readonly float _characterVerticalMaxVelocity = 54f;
+
+//角色的Y轴移动方向，因为是通过charactercontroller的move函数来实现重力。所以把_characterVerticalVelocity，应用到这个向量的Y值里面去更新
+protected Vector3 _characterVerticalDireciton;           
+
+//防止角色下楼梯的时候鬼畜，比如下楼梯时播放跌落动画。这个0.15秒用于缓冲，判断角色是不是在下楼梯
+protected float _fallOutTime = 0.15f;                       
+
+//配合_fallOutTime使用的下落时间计数
+protected float _fallOutDeltaTime;
+
+//是否启用重力
+protected bool _isEnableGravity;                                
+```
+
+
+
+**在update中，我们先设置角色的重力，然后再更新角色的再重力方向上的位移**
+
+```c#
+protected virtual void Update()
 {
-    /// <summary>
-    /// 角色移动基类
-    /// </summary>
-    
-    [RequireComponent(typeof(CharacterController))]                         //强制需要有一个charactercontroller，目的是为了防止添加角色控制器
-    public abstract class CharacterMovementControllerBase : MonoBehaviour
+	SetCharacterGracity();
+	UpdateCharacterGravity();
+}
+```
+
+
+
+**SetCharacterGracity**
+
+设置角色受重力影响的速度_characterVerticalVelocity
+
+```c#
+private void SetCharacterGracity()
+{
+	if(!_isEnableGravity)return;
+	
+	_characterIsOnGroud = GroundDetection();
+
+    if (_characterIsOnGroud)
     {
-        protected CharacterController _controller;
-        protected Animator _animator;
-
-        //地面检测
-        protected bool _characterIsOnGroud;                                                         //角色是否在地面上                      
-        [SerializeField,Header("地面检测")] protected float _groudDetectionPositionOffset;    //为了更好控制检测器的位置，这里添加一个offset
-        [SerializeField] protected float _detectionRang;                                            //检测范围
-        [SerializeField] protected LayerMask _whatIsGround;                                         //检测场景，只去检测被标记为groud的layer，其他的就忽略掉
-
-        //重力
-        protected readonly float CharacterGravity = -9.8f;              //重力加速度
-        protected float _characterVerticalVelocity;                     //用于更新角色Y轴的速度(可以应用于重力和跳跃高度,砍敌人一刀，敌人往天上飞也可以用这个变量实现)
-        protected readonly float _characterVerticalMaxVelocity = 54f;   //角色在低于这个值的时候，才需要应用重力
-        protected Vector3 _characterVerticalDireciton;                  //角色的Y轴移动方向，因为是通过charactercontroller的move函数来实现重力。所以把_characterVerticalVelocity，应用到这个向量的Y值里面去更新
-        protected float _fallOutDeltaTime;
-        protected float _fallOutTime = 0.15f;                           //防止角色下楼梯的时候鬼畜，比如下楼梯时播放跌落动画。这个0.15秒用于缓冲，判断角色是不是在下楼梯
-
-
-        protected virtual void Awake()
+    	//如果角色在地面上需要重置FallOutTime
+    	_fallOutDeltaTime = _fallOutTime;
+    	//重置角色垂直速度
+        if(_characterVerticalVelocity < 0f)
         {
-            _controller = GetComponent<CharacterController>();
-            _animator = GetComponent<Animator>();
+        //如果这里不给他固定死，那么它会一直累积。当你第二次跳跃或者从高处跌落，那么你的下降速度就会很快。不会从慢到快。
+        //固定-2，那么你第二次高出跌落，那么你的垂直速度就是从-2f开始计算
+        //非固定，在地面还在一直累计，-100f或者-500f,这时候你在第二次高处跌落，那么你的垂直速度就是从-500开始计算
+        	_characterVerticalVelocity = -2f;
+        }
+    }
+    else
+    {    
+        //不在地面上
+        if (_fallOutDeltaTime > 0)
+        {
+        //等待0.15秒用于缓冲，这个0.15秒用于帮助角色从较低的高度差下落(比如两节楼梯)，这么短的时间就没有必要播放下落的动作
+        	_fallOutDeltaTime -= Time.deltaTime;
+        }
+        else
+        {
+        	//说明过来0.15秒角色还没有落地，可能不是在下楼梯，那么就有必要播放下落动画了
+			//播放下落动画
         }
 
-        protected virtual void Start()
+        //设置受重力影响下垂直方向上的速度
+        //这里一直累加，知道大于最大的垂直速度
+        if((-_characterVerticalVelocity) < _characterVerticalMaxVelocity)
         {
-            _fallOutDeltaTime = _fallOutTime;
-        }
-
-        private void Update()
-        {
-            SetCharacterGracity();
-            UpdateCharacterGravity();
-        }
-
-
-        //地面检测
-        private bool GroundDetection()
-        {
-            //检测的中心点
-            var detectionPosition = new Vector3(transform.position.x, transform.position.y - _groudDetectionPositionOffset, transform.position.z);
-            return Physics.CheckSphere(detectionPosition, _detectionRang, _whatIsGround, QueryTriggerInteraction.Ignore);
-        }
-
-        //重力
-        private void SetCharacterGracity()
-        {
-            _characterIsOnGroud = GroundDetection();
-
-            if (_characterIsOnGroud)
-            {
-                //如果角色在地面上需要重置FallOutTime
-                _fallOutDeltaTime = _fallOutTime;
-                //重置角色垂直速度
-                if(_characterVerticalVelocity < 0f)
-                {
-                    _characterVerticalVelocity = -2f;//如果这里不给他固定死，那么它会一直累积。当你第二次跳跃或者从高处跌落，那么你的下降速度就会很快。不会从慢到快。
-                    //固定-2，那么你第二次高出跌落，那么你的垂直速度就是从-2f开始计算
-                    //非固定，在地面还在一直累计，-100f或者-500f,这时候你在第二次高处跌落，那么你的垂直速度就是从-500开始计算
-                }
-            }
-            else
-            {    
-                //不在地面上
-
-
-                if (_fallOutDeltaTime > 0)
-                {
-                    _fallOutDeltaTime -= Time.deltaTime;//等待0.15秒用于缓冲，这个0.15秒用于帮助角色从较低的高度差下落(比如两节楼梯)，这么短的时间就没有必要播放下落的动作
-                }
-                else
-                {
-                    //说明过来0.15秒角色还没有落地，可能不是在下楼梯，那么就有必要播放下落动画了
-
-                }
-                
-                //设置重力  //todo
-                if((-_characterVerticalVelocity) < _characterVerticalMaxVelocity)
-                {
-                    _characterVerticalVelocity += CharacterGravity * Time.deltaTime;
-                }
-            }
-        }
-        private void UpdateCharacterGravity()
-        {
-            _characterVerticalDireciton.Set(0, _characterVerticalVelocity, 0);
-            _controller.Move(_characterVerticalDireciton * Time.deltaTime);
-        }
-
-        //坡道检测
-        private Vector3 SlopResetDirection(Vector3 moveDireciton)
-        {
-            //检测角色限制是否在坡上移动，防止角色下坡速度过快时，变成弹力球
-            if(Physics.Raycast(transform.position+(transform.up*5f),Vector3.down,out var hit,_controller.height*0.85f,_whatIsGround,QueryTriggerInteraction.Ignore)){
-                //点积==0 说明两个向量是垂直的，浮点值不会完全相等，只会无限接近
-                //hit.normal是射线打到物体的法线
-                if(Vector3.Dot(Vector3.up,hit.normal) != 0)
-                {
-                    //ProjectOnPlane:向量投影到normal对应的平面上。
-                    //比如：vec:(1,2,3) nor:(0,1,0)  得到的投影就是（1,0,3）
-                    return Vector3.ProjectOnPlane(moveDireciton, hit.normal);
-                }
-            }
-            return moveDireciton;
-        }
-
-        //可视化,测试用
-        private void OnDrawGizmos()
-        {
-            //检测的中心点
-            var detectionPosition = new Vector3(transform.position.x, transform.position.y - _groudDetectionPositionOffset, transform.position.z);
-            Gizmos.DrawWireSphere(detectionPosition,_detectionRang);
+        	_characterVerticalVelocity += CharacterGravity * Time.deltaTime;
         }
     }
 }
-
 ```
 
 
 
-# 相机控制
+**UpdateCharacterGravity**
+
+更新角色在重力方向上的位移,这里使用charactercontroller的Move方法来实现
+
+```c#
+private void UpdateCharacterGravity()
+{
+    if (!_isEnableGravity) return;
+    _characterVerticalDireciton.Set(0, _characterVerticalVelocity, 0);
+    _controller.Move(_characterVerticalDireciton * Time.deltaTime);
+}
+```
 
 
 
-## 基础控制
+### 移动相关
+
+我们使用动画来驱动移动，也就是我们这里使用rootmotion来进行移动，避免滑步的问题。
+
+**OnAnimatorMove**
+
+```
+protected virtual void OnAnimatorMove()
+{
+    //告诉 Animator 使用动画中的 Root Motion 来影响游戏对象的移动。
+    _animator.ApplyBuiltinRootMotion();                    
+    //animator.deltaPosition上一帧动画的位置变化，所以你的动画需要带位移才能这样用
+    UpdateCharacterMoveDirection(_animator.deltaPosition);
+}
+```
+
+
+
+**UpdateCharacterMoveDirection**
+
+使用rootmotion每帧给我们提供的位移变化，用charactercontroller来对游戏对象真正的position变化
+
+
+    protected void UpdateCharacterMoveDirection(Vector3 diretion)
+    {
+        _moveDirection = SlopResetDirection(diretion);
+        _controller.Move(_moveDirection * Time.deltaTime);
+    }
+
+
+
+**坡道检测**
+
+在角色上下坡的时候，如果我们还像上面那样旨在xz平面上的移动很明显就不合理了，因为上下坡是有y方向上的移动的。
+
+**那么我们怎么判断是否在一个坡上呢？**
+
+我们在角色身上向下射出一条射线，如果被射线打到的物体表面法线和vector3是不是平行的话就是在坡上了
+
+如果在坡上，我们应该获取到在坡上移动的这个向量，而不是xz平面上的向量
+
+    private Vector3 SlopResetDirection(Vector3 moveDireciton)
+    {
+        //检测角色限制是否在坡上移动，防止角色下坡速度过快时，变成弹力球
+        if (Physics.Raycast(transform.position + (transform.up * 5f), Vector3.down, out var hit, _controller.height * 0.85f, _whatIsGround, QueryTriggerInteraction.Ignore))
+        {
+            //点积==0 说明两个向量是垂直的，浮点值不会完全相等，只会无限接近
+            //hit.normal是射线打到物体的法线
+            if (hit.normal != Vector3.up)
+            {
+                //ProjectOnPlane:向量投影到normal对应的平面上。
+                //比如：vec:(1,2,3) nor:(0,1,0)  得到的投影就是（1,0,3）
+                return Vector3.ProjectOnPlane(moveDireciton, hit.normal);
+            }
+        }
+        return moveDireciton;
+    }
+
+
+
+
+
+## 相机控制
+
+
+
+### 基础控制
 
 ![image-20231210153326274](ARPG.assets/image-20231210153326274.png) 
 
@@ -279,7 +434,7 @@ public class TP_CameraController : MonoBehaviour
 
 
 
-## 相机碰撞
+### 相机碰撞
 
 <img src="ARPG.assets/image-20231209092255003.png" alt="image-20231209092255003" style="zoom:50%;" /> 
 
@@ -350,7 +505,7 @@ public class CameraCollider : MonoBehaviour
 
 
 
-## 相机处决
+### 相机处决
 
 character在处决敌人的时候，相机要注视敌人
 

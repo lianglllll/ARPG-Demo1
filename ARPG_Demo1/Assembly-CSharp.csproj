@@ -84,8 +84,8 @@
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Math\SetFloat.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Variables\SharedFloat.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Composites\RandomSelector.cs" />
-    <Compile Include="Assets\Script\ScriptableObjects\AssetsSound\AssetsSoundSO.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Transform\SetLocalPosition.cs" />
+    <Compile Include="Assets\Script\ScriptableObjects\AssetsSound\AssetsSoundSO.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Transform\SetParent.cs" />
     <Compile Include="Assets\Animator\MMD4Mecanim\Scripts\MMD4MecanimMorphHelper.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedString.cs" />
@@ -103,13 +103,13 @@
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Projectile\IFX_ManualProjectileWeapon.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalScale.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Composites\PrioritySelector.cs" />
-    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Animator\StopPlayback.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Target\IFX_ObjectFinder.cs" />
+    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Animator\StopPlayback.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Math\IntComparison.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\UseGravity.cs" />
-    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Conditionals\HasReceivedEvent.cs" />
-    <Compile Include="Assets\Script\VisualEffect\CharacterHitFXHelper.cs" />
     <Compile Include="Assets\Animator\MMD4Mecanim\Scripts\MMD4MecanimRigidBody.cs" />
+    <Compile Include="Assets\Script\VisualEffect\CharacterHitFXHelper.cs" />
+    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Conditionals\HasReceivedEvent.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsStopped.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Input\IsKeyUp.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Vector2\SetValue.cs" />
@@ -117,8 +117,8 @@
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\GameObject\GetTag.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Math\BoolFlip.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Camera\IFX_CameraShakeController.cs" />
-    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetScheduledStartTime.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Math\FloatComparison.cs" />
+    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetScheduledStartTime.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPitch.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetMaxDistance.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Animator\GetDeltaPosition.cs" />
@@ -184,8 +184,8 @@
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Light\SetCookie.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Utils\IFX_AuraCloner.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Timeline\Stop.cs" />
-    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartRotation.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetVector2.cs" />
+    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartRotation.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Vector2\Distance.cs" />
     <Compile Include="Assets\Script\Character\Enemy\Behavior_Tree\AIAttckCommandCondition.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Projectile\IFX_SimpleProjectile.cs" />
@@ -204,6 +204,7 @@
     <Compile Include="Assets\Script\Base\NCharacterCombatBase.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetMass.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Utils\IFX_ComponentUtil.cs" />
+    <Compile Include="Assets\AnimaitonLearn\Animation\PlayeMoveTest.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Timeline\Pause.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetEmissionRate.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Input\GetKey.cs" />
@@ -290,8 +291,8 @@
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Light\GetRange.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetAudioClip.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Animator\SetLookAtWeight.cs" />
-    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetIgnoreListenerVolume.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedVector3.cs" />
+    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetIgnoreListenerVolume.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Math\IntOperator.cs" />
     <Compile Include="Assets\Script\Interface\IHealthMonitor.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Ability\IFX_IAbilityFx.cs" />
@@ -522,8 +523,8 @@
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Light\SetCookieSize.cs" />
     <Compile Include="Assets\Script\Manager\GameTimerManager.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Ability\IFX_DefaultAnimatorAbilityFxController.cs" />
-    <Compile Include="Assets\Script\ScriptableObjects\Health\CharacterHealthData\CharacterHealthDataSO.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetMass.cs" />
+    <Compile Include="Assets\Script\ScriptableObjects\Health\CharacterHealthData\CharacterHealthDataSO.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Math\BoolComparison.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Actions\Reflection\GetPropertyValue.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\GameObject\GetComponent.cs" />
@@ -570,9 +571,9 @@
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedVector4.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetDuration.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddForceAtPosition.cs" />
-    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\Sleep.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Math\FloatOperator.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Transform\Find.cs" />
+    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\Sleep.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Utils\Materials\IFX_MaterialSetter.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\IFX_Abilities\IFX_BlinkControllerKeyboardListener.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredCollision2D.cs" />
@@ -617,7 +618,7 @@
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Utils\IFX_InvokeUtil.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Quaternion\FromToRotation.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetMinDistance.cs" />
-    <Compile Include="Assets\Script\Interface\IInteraction.cs" />
+    <Compile Include="Assets\Script\Interaction\Base\IInteraction.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetPosition.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Vector3\ClampMagnitude.cs" />
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Demo\IFX_DemoSceneManager.cs" />
@@ -629,7 +630,7 @@
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Composites\ParallelSelector.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetVelocityUpdateMode.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Animator\GetDeltaRotation.cs" />
-    <Compile Include="Assets\Script\Character\Player\PlayerCombatController.cs" />
+    <Compile Include="Assets\Script\Character\Player\Old\PlayerCombatController.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetIsKinematic.cs" />
     <Compile Include="Assets\Script\Base\CharacterMovementControllerBase.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedGameObject.cs" />
@@ -679,10 +680,10 @@
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Animation\Blend.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Play.cs" />
     <Compile Include="Assets\Animator\MMD4Mecanim\Scripts\MMD4MecanimAnimMorphHelper.cs" />
-    <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Utils\Materials\IFX_MaterialReplacer.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Time\GetRealtimeSinceStartup.cs" />
-    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Conditionals\Reflection\ComparePropertyValue.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetMaxDistance.cs" />
+    <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Conditionals\Reflection\ComparePropertyValue.cs" />
+    <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\Utils\Materials\IFX_MaterialReplacer.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalEulerAngles.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedFloat.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Light\GetIntensity.cs" />
@@ -703,7 +704,7 @@
     <Compile Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Scripts\IFX_Abilities\IFX_Minigun.cs" />
     <Compile Include="Assets\Script\Character\Enemy\Health\EnemyHealthController.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Animator\InterruptMatchTarget.cs" />
-    <Compile Include="Assets\Script\Base\CharacterCombatBase.cs" />
+    <Compile Include="Assets\Script\Base\Old\CharacterCombatBase.cs" />
     <Compile Include="Assets\Script\Interaction\LightInteraction.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Transform\LookAt.cs" />
     <Compile Include="Assets\Animator\Behavior Designer\Runtime\Tasks\Unity\Vector2\ClampMagnitude.cs" />
@@ -715,12 +716,14 @@
     <None Include="Assets\Art\ActorModel\明日香紧身作战服\使用规则.txt" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-NoShadowCasting-Transparent-Edge.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Surface-ForwardAdd.cginc" />
+    <None Include="Assets\Art\ActorModel\火奴鲁鲁V1\火奴鲁鲁v1.MMD4Mecanim.xml" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Distortion\IFX_SphericalDistortion.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Scripts\Internal\MMD4Mecanim.dll" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-NoShadowCasting-BothFaces.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-BothFaces-Edge.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-NoShadowCasting-BothFaces-Transparent.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Plugins\MMD4MecanimBulletPhysics\x86\MMD4MecanimBulletPhysics.dll" />
+    <None Include="Assets\Art\ActorModel\云图绛雨V1配布\jiangyuNNDV1.MMD4Mecanim.xml" />
     <None Include="Assets\Art\ActorModel\明日香紧身作战服\明日香.xml" />
     <None Include="Assets\Animator\MMD4Mecanim\Plugins\MMD4MecanimBulletPhysics\WSA\X86\MMD4MecanimBulletPhysics.dll" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Templates\Particle Alpha Blend.shader" />
@@ -732,6 +735,7 @@
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Transparent-Edge.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-BothFaces-Transparent.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Plugins\MMD4MecanimBulletPhysics\x86_64\MMD4MecanimBulletPhysics.dll" />
+    <None Include="Assets\Art\ActorModel\云图绛雨V1配布\jiangyuNNDV1.xml" />
     <None Include="Assets\Animator\MMD4Mecanim\Scripts\MMD4Mecanim.dll" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-NoShadowCasting-Transparent-Edge.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-NoShadowCasting-Edge.shader" />
@@ -747,11 +751,13 @@
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Cutout\IFX_CutoutAB_Alignment.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Plugins\MMD4MecanimBulletPhysics\WSA\X64\MMD4MecanimBulletPhysics.dll" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Abilities\IFX_DepthMask_Under.shader" />
+    <None Include="Assets\Art\ActorModel\明日香日常服\明日香1.0.xml" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Particles\IFX_Particles_Add.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Plugins\MMD4MecanimBulletPhysics 2.75\WSA\X86\MMD4MecanimBulletPhysics.dll" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Surface-Tessellation.cginc" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Surface-ShadowCaster.cginc" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Aura\IFX_VelocityAura.shader" />
+    <None Include="Assets\Art\ActorModel\明日香日常服\明日香2.0.xml" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\Readme.txt" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Edge.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-NoShadowCasting-Edge.shader" />
@@ -761,15 +767,19 @@
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\URP HDRP LWRP Readme.txt" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Abilities\IFX_DoubleSidePaper.shader" />
     <None Include="Assets\Art\ActorModel\水仙十字之剑\水仙十字之剑.MMD4Mecanim.xml" />
+    <None Include="Assets\Art\ActorModel\火奴鲁鲁V1\火奴鲁鲁v1.xml" />
+    <None Include="Assets\Art\ActorModel\明日香日常服\使用规则.txt" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\Scripts Detailed Readme.txt" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Decal\IFX_SphereMask_AB.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-SurfaceEdge-ForwardAdd.cginc" />
+    <None Include="Assets\Art\ActorModel\火奴鲁鲁V1\火奴鲁鲁舰装.MMD4Mecanim.xml" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\Change Log.txt" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-NEXTEdge-Pass4.shader" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Cutout\IFX_GlowCutout.shader" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Abilities\IFX_DepthMask.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-NoShadowCasting-BothFaces-Transparent-Edge.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-BothFaces-Transparent-Edge.shader" />
+    <None Include="Assets\Art\ActorModel\明日香日常服\明日香1.0.MMD4Mecanim.xml" />
     <None Include="Assets\Animator\MMD4Mecanim\Plugins\MMD4MecanimBulletPhysics 2.75\x86_64\MMD4MecanimBulletPhysics.dll" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Surface-ShadowCollector.cginc" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Cutout\IFX_CutoutAB_Radial.shader" />
@@ -779,6 +789,7 @@
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Transparent.shader" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Trail\IFX_Curve.shader" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Aura\IFX_WindAura.shader" />
+    <None Include="Assets\Art\ActorModel\云图绛雨V1配布\jiangyuV1武器.xml" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-Transparent.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Surface-ForwardBase.cginc" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-NoShadowCasting.shader" />
@@ -791,11 +802,13 @@
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-BothFaces-Transparent-Edge.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-NoShadowCasting-BothFaces-Transparent-Edge.shader" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Cutout\IFX_CutoutEmissionAB_CullBack.shader" />
+    <None Include="Assets\Art\ActorModel\火奴鲁鲁V1\火奴鲁鲁舰装.xml" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-NoShadowCasting.shader" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Abilities\IFX_CurveAppearMask.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-Transparent-Edge.shader" />
     <None Include="Assets\Art\ActorModel\明日香紧身作战服\明日香.MMD4Mecanim.xml" />
+    <None Include="Assets\Art\ActorModel\云图绛雨V1配布\jiangyuV1武器.MMD4Mecanim.xml" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-BothFaces.shader" />
     <None Include="Assets\Art\ActorModel\水仙十字之剑\水仙十字之剑.xml" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-NoShadowCasting-BothFaces.shader" />
@@ -804,6 +817,7 @@
     <None Include="Assets\Animator\MMD4Mecanim\Plugins\MMD4MecanimBulletPhysics\WSA\ARM\MMD4MecanimBulletPhysics.dll" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\Credits.txt" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Tess-BothFaces.shader" />
+    <None Include="Assets\Art\ActorModel\明日香日常服\明日香2.0.MMD4Mecanim.xml" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-BothFaces-Transparent.shader" />
     <None Include="Assets\Art\Effects\QFX\Imagy VFX\VFX_Resources\Shaders\Particles\IFX_Particles_AB.shader" />
     <None Include="Assets\Animator\MMD4Mecanim\Shaders\MMD4Mecanim-MMDLit-Lighting.cginc" />
@@ -1057,14 +1071,29 @@
     <Reference Include="MMD4Mecanim">
       <HintPath>Assets\Animator\MMD4Mecanim\Scripts\MMD4Mecanim.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="BehaviorDesigner.Runtime">
       <HintPath>Assets\Animator\Behavior Designer\Runtime\BehaviorDesigner.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Mdb">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Rocks">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -1465,6 +1494,9 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
@@ -1498,8 +1530,23 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
@@ -1510,8 +1557,14 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
